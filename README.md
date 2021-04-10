@@ -40,7 +40,7 @@ let query // user input search query
 fetch('/saerch.json')
   .then(res => res.json())
   .then(data => {
-    const result = data.m[query].map(idx => data.docs[idx])
+    const result = data.map[query].map(idx => data.docs[idx])
     console.log(result)
   })
 ```
